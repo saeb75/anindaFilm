@@ -42,3 +42,12 @@ button:hover {
 .vjs-poster {
   background-size: 100% 100% !important;
 }
+@media only screen and (max-width: 640px) {
+  .vjs-big-play-button {
+    background-size: 40px 40px !important;
+  }
+}
+.swiper-button-prev:after,
+.swiper-rtl .swiper-button-next:after {
+  content: "" !important;
+}
