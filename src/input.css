@@ -1,7 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+body {
+  font-family: "Inter", sans-serif !important;
+}
 .side-menu {
   left: -100%;
 }
@@ -50,4 +52,9 @@ button:hover {
 .swiper-button-prev:after,
 .swiper-rtl .swiper-button-next:after {
   content: "" !important;
+}
+.disable-scroll {
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
 }
