@@ -452,9 +452,9 @@ Ensure the default browser behavior of the `hidden` attribute.
   }
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 1250px) {
   .container {
-    max-width: 1180px;
+    max-width: 1250px;
   }
 }
 
@@ -514,6 +514,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   grid-column: span 6 / span 6;
 }
 
+.col-span-1 {
+  grid-column: span 1 / span 1;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -529,6 +533,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 1rem;
 }
 
+.my-16 {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+}
+
+.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .mb-6 {
   margin-bottom: 1.5rem;
 }
@@ -539,10 +553,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-4 {
   margin-top: 1rem;
-}
-
-.ml-12 {
-  margin-left: 3rem;
 }
 
 .ml-4 {
@@ -575,6 +585,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.mb-2 {
+  margin-bottom: 0.5rem;
 }
 
 .block {
@@ -611,6 +633,10 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .h-\[89px\] {
   height: 89px;
+}
+
+.h-\[160px\] {
+  height: 160px;
 }
 
 .min-h-screen {
@@ -673,8 +699,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   transform: var(--tw-transform);
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
 .grid-cols-12 {
   grid-template-columns: repeat(12, minmax(0, 1fr));
+}
+
+.grid-cols-7 {
+  grid-template-columns: repeat(7, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -762,6 +796,14 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .rounded-\[10px\] {
   border-radius: 10px;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
 }
 
 .border-b {
@@ -880,12 +922,21 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 1rem;
 }
 
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
 .pl-4 {
   padding-left: 1rem;
 }
 
 .pb-2 {
   padding-bottom: 0.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .text-sm {
@@ -907,6 +958,15 @@ Ensure the default browser behavior of the `hidden` attribute.
   font-size: 10px;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
+.text-\[12px\] {
+  font-size: 12px;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -923,6 +983,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .text-lightColor {
   --tw-text-opacity: 1;
   color: rgb(105 105 114 / var(--tw-text-opacity));
+}
+
+.text-primary {
+  --tw-text-opacity: 1;
+  color: rgb(210 47 39 / var(--tw-text-opacity));
 }
 
 .transition-all {
@@ -956,6 +1021,37 @@ button:hover {
   opacity: 0.7;
 }
 
+.video-js .vjs-big-play-button {
+  left: 50% !important;
+  top: 50% !important;
+  width: 20%;
+  height: 20%;
+}
+
+.video-js .vjs-play-control:before {
+  top: 20% !important;
+  content: "" !important;
+  font-size: 48px;
+}
+
+.video-js .vjs-big-play-button .vjs-icon-placeholder:before {
+  background: transparent !important;
+  content: "" !important;
+}
+
+.vjs-big-play-button {
+  background: url(../assets/icons/play.png) !important;
+  background-repeat: no-repeat !important;
+  background-position: center !important;
+  background-size: 70px 70px !important;
+  border: none !important;
+  height: 70px !important;
+}
+
+.vjs-poster {
+  background-size: 100% 100% !important;
+}
+
 .focus-within\:outline-none:focus-within {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -974,13 +1070,27 @@ button:hover {
   outline-offset: 2px;
 }
 
+@media (min-width: 640px) {
+  .sm\:h-auto {
+    height: auto;
+  }
+}
+
 @media (min-width: 768px) {
+  .md\:col-span-4 {
+    grid-column: span 4 / span 4;
+  }
+
+  .md\:h-\[400px\] {
+    height: 400px;
+  }
+
   .md\:w-1\/4 {
     width: 25%;
   }
 }
 
-@media (min-width: 1180px) {
+@media (min-width: 1250px) {
   .lg\:col-span-8 {
     grid-column: span 8 / span 8;
   }
@@ -991,6 +1101,14 @@ button:hover {
 
   .lg\:col-span-2 {
     grid-column: span 2 / span 2;
+  }
+
+  .lg\:col-span-6 {
+    grid-column: span 6 / span 6;
+  }
+
+  .lg\:col-span-3 {
+    grid-column: span 3 / span 3;
   }
 
   .lg\:row-span-4 {
@@ -1015,6 +1133,10 @@ button:hover {
     margin-right: 0.5rem;
   }
 
+  .lg\:ml-6 {
+    margin-left: 1.5rem;
+  }
+
   .lg\:mt-8 {
     margin-top: 2rem;
   }
@@ -1025,6 +1147,10 @@ button:hover {
 
   .lg\:mb-1 {
     margin-bottom: 0.25rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:block {
@@ -1047,8 +1173,16 @@ button:hover {
     height: 4rem;
   }
 
-  .lg\:w-52 {
-    width: 13rem;
+  .lg\:h-\[480px\] {
+    height: 480px;
+  }
+
+  .lg\:w-36 {
+    width: 9rem;
+  }
+
+  .lg\:w-40 {
+    width: 10rem;
   }
 
   .lg\:w-full {
@@ -1067,6 +1201,10 @@ button:hover {
     width: 1rem;
   }
 
+  .lg\:w-52 {
+    width: 13rem;
+  }
+
   .lg\:shrink {
     flex-shrink: 1;
   }
@@ -1083,8 +1221,16 @@ button:hover {
     grid-template-rows: repeat(2, minmax(0, 1fr));
   }
 
+  .lg\:flex-row-reverse {
+    flex-direction: row-reverse;
+  }
+
   .lg\:flex-wrap {
     flex-wrap: wrap;
+  }
+
+  .lg\:justify-between {
+    justify-content: space-between;
   }
 
   .lg\:gap-6 {
@@ -1125,6 +1271,11 @@ button:hover {
     padding-bottom: 2rem;
   }
 
+  .lg\:px-16 {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
   .lg\:pt-4 {
     padding-top: 1rem;
   }
@@ -1156,5 +1307,24 @@ button:hover {
 
   .lg\:text-\[14px\] {
     font-size: 14px;
+  }
+
+  .lg\:text-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:ml-12 {
+    margin-left: 3rem;
+  }
+
+  .xl\:w-52 {
+    width: 13rem;
+  }
+
+  .xl\:w-48 {
+    width: 12rem;
   }
 }
